@@ -20,6 +20,17 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+    
+
+# Export two variables to your environment,
+# export POSTGRES_USERNAME='username'
+# export POSTGRES_PASSWORD='password'    
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+  database: toy-blog
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
+
