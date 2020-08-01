@@ -59,9 +59,10 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.1)
-    autoprefixer-rails (9.8.5)
+    autoprefixer-rails (9.8.6)
       execjs
     backport (1.1.2)
+    bcrypt (3.1.15)
     benchmark (0.1.0)
     bindex (0.8.1)
     bootsnap (1.4.7)
@@ -253,6 +254,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.2)
   bootstrap (~> 4.5.0)
   byebug
